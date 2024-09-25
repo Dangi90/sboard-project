@@ -1,0 +1,13 @@
+공유 메일 비밀번호 
+mawj nxfq tiwx regc
+
+AWS 서버 IP
+13.125.197.88
+
+root / 1234
+
+서버DB
+root / 1234Asd@
+
+netstat -tnlp
+

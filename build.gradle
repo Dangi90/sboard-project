@@ -5,7 +5,14 @@ plugins {
 }
 
 group = 'com.sboard'
-version = '0.0.3-SNAPSHOT'
+version = '0.0.4-SNAPSHOT'
+
+
+processResources {
+    filesMatching('**/application.yml') {
+        expand(project.properties)
+    }
+}
 
 java {
     toolchain {
