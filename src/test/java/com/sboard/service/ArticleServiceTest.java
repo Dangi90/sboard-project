@@ -14,21 +14,4 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class ArticleServiceTest {
 
-    @Autowired
-    private ArticleRepository articleRepository;
-
-
-    @Test
-    void selectArticleAll() {
-
-        PageRequestDTO pageRequestDTO = PageRequestDTO.builder().build();
-        Pageable pageable = pageRequestDTO.getPageable("no");
-
-        Page<Tuple> pageArticle = articleRepository.selectArticleAllForList(pageRequestDTO, pageable);
-
-
-        System.out.println(pageArticle.getContent());
-
-
-    }
 }

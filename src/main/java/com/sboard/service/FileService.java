@@ -91,6 +91,12 @@ public class FileService {
 
         if(optFile.isPresent()){
             fileEntity = optFile.get();
+
+            // 파일 다ㅏ운로드 카운트 +1
+            int count = fileEntity.getDownload();
+            fileEntity.setDownload(count + 1);
+
+            fileRepository.save(fileEntity);
         }
 
 
